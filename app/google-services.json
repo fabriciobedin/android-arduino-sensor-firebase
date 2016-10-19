@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "498048127162",
+    "firebase_url": "https://cloudhomeautomation-cfde9.firebaseio.com",
+    "project_id": "cloudhomeautomation-cfde9",
+    "storage_bucket": "cloudhomeautomation-cfde9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498048127162:android:d55eb685fc938b75",
+        "android_client_info": {
+          "package_name": "casca.upf.com.homeautomation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "498048127162-6lv07odu5vgtomq01v58fvcauq88pu37.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCACxqmJ5qrqnT7KfkOpUovmGTHLb1dZz0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
