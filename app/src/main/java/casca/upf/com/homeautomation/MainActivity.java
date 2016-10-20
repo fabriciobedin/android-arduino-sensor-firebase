@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if(dataSnapshot.getChildrenCount()>0){
                     for(DataSnapshot data : dataSnapshot.getChildren()){
-                        float lightValue = Integer.parseInt(""+data.getValue());
+                        float lightValue = Float.parseFloat(""+data.getValue());
                             if (lightValue > 0.10){
                                 imgLamp.setImageResource(R.drawable.lamp_on);
                             }else{
