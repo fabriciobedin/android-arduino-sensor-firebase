@@ -1,0 +1,17 @@
+altere o script conforme instruções dentro do próprio script com seus dados do firebase.
+
+instalar o nodejs
+
+digitar no terminal--------------------------
+(entrar no diretorio que conter o script)
+npm install -g firebase-tools
+
+firebase login
+
+npm install firebase --save
+
+firebase init
+
+npm install johnny-five
+
+node nomedoscript.js

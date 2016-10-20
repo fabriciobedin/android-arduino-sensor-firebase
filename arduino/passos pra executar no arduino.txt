@@ -1,0 +1,7 @@
+depois de conectado o sensor conforme indicação no site johnny-five.io/api/light/
+abrir o arduino
+ir em File -> Example -> Firmata -> StandardFirmata
+
+Compilar o código e gravar no arduino.
+
+Após isso, seguir os passos para a execução do script_node.js
