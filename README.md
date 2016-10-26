@@ -55,7 +55,7 @@ Eu apenas coloquei um "if" para apenas enviar os valores para o firebase quando 
 exemplo: cd C:/Users/Fabricio/Desktop/Scripts<br>
 Executar os seguintes comandos:<br>
 • npm install -g firebase-tools<br>
-(pra instalar o plugin do firebase)
+(pra instalar o plugin do firebase)<br>
 • firebase login<br>
 (entre com os dados da sua conta google que você criou o projeto do firebase)<br>
 (vai pedir pra confirmar umas coisas, pode ir colocando y e enter)<br>
