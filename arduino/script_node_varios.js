@@ -70,6 +70,11 @@ board.on("ready", function() {
 
     });
 
+    linha adicionada..
+    ;
+    ;
+    
+
     // "acceleration"
     //
     // Fires once every N ms, equal to value of freg
