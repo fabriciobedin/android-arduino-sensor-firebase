@@ -64,8 +64,17 @@ Executar os seguintes comandos:<br>
 • node script.js<br>
 após executar isso, ele vai se conectar ao arduino e começar a passar os dados do sensor para o Firebase
 
-#### 9º - Abrir o https://console.firebase.google.com/ e ver se os dados estão chegando na nuvem
-Clicar na guia Database, e ver se apareceu uma chave com uma tag sensor com os dados dentro
+#### 9º - Abrir o https://console.firebase.google.com/ e entrar no projeto criado
+Clicar na guia Database (menu do lado esquerdo), e ver se apareceu uma chave com uma tag sensor com os dados dentro
+Caso não tenha aparecido, vai em regras (na parte de cima, no lado de dados) e altera pra isso.
+
+<br>
+<code>{<code>
+<code>  "rules": {<code>
+<code>    ".read": true,<code>
+<code>    ".write": true<code>
+<code>  }<code>
+<code>}<code><br>
 
 #### 10º - Volte pro inicio do Firebase e selecione a opção Adicionar Projeto Android 
 Tenha cuidado pra deixar o mesmo nome do pacote, no meu caso eu deixei esse:<br>
