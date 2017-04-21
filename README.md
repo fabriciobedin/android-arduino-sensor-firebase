@@ -69,12 +69,12 @@ Clicar na guia Database (menu do lado esquerdo), e ver se apareceu uma chave com
 Caso não tenha aparecido, vai em regras (na parte de cima, no lado de dados) e altera pra isso.
 
 <br>
-<code>{<code>
-<code>  "rules": {<code>
-<code>    ".read": true,<code>
-<code>    ".write": true<code>
-<code>  }<code>
-<code>}<code><br>
+<code>{</code>
+<code>  "rules": {</code>
+<code>    ".read": true,</code>
+<code>    ".write": true</code>
+<code>  }</code>
+<code>}</code><br>
 
 #### 10º - Volte pro inicio do Firebase e selecione a opção Adicionar Projeto Android 
 Tenha cuidado pra deixar o mesmo nome do pacote, no meu caso eu deixei esse:<br>
