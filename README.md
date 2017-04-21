@@ -13,12 +13,13 @@ O Firmata faz a leitura do que estiver conectado ao arduino, sem precisar escrev
 #### 3º - Instalar o Node JS
 Disponível em https://nodejs.org/
 
-#### 4º - Executar esse comando no terminal para instalar o plugin Johnny-five
+#### 4º - Abrir o terminal do Node e executar esse comando para instalar o plugin Johnny-five
 npm install johnny-five
+(jhonifive é uma api que você pode utilizar pra ligar varios sensores no arduino ou placa que estiver usando, ele tem um suporte bem amplo. Com ele, você não precisa se preocupar em escrever um código extenso pra fazer a leitura de um sensor, ele se comunica com o firmata que deixou rodando no arduino e faz tudo sozinho.) 
 
-#### 5º - Entrar no site do Johnny-Five pra copiar o código
+#### 5º - Entrar no site do Johnny-Five pra copiar o código do sensor que estiver usando
 http://johnny-five.io/api/light/<br>
-o código pra leitura do sensor vai ser esse: <br>
+o código pra leitura desse sensor que estou usando é esse: <br>
 <br>
 <code>var five = require("johnny-five");</code><br>
 <code>var board = new five.Board();</code><br>
@@ -66,9 +67,8 @@ após executar isso, ele vai se conectar ao arduino e começar a passar os dados
 
 #### 9º - Abrir o https://console.firebase.google.com/ e entrar no projeto criado
 Clicar na guia Database (menu do lado esquerdo), e ver se apareceu uma chave com uma tag sensor com os dados dentro
-Caso não tenha aparecido, vai em regras (na parte de cima, no lado de dados) e altera pra isso.
+Caso não tenha aparecido, as regras do Firebase devem estar bloqueando, vai na guia regras (na parte de cima, no lado de dados) e altere os valores conforme abaixo, isso vai fazer o Firebase liiberar qualquer comunicação, sem autenticação.
 
-<br>
 <code>{</code><br>
 <code>  "rules": {</code><br>
 <code>    ".read": true,</code><br>
@@ -81,10 +81,11 @@ Tenha cuidado pra deixar o mesmo nome do pacote, no meu caso eu deixei esse:<br>
 casca.upf.com.homeautomation
 
 #### 11º - Após isso, você pode clonar esse projeto do github no seu Android Studio
-E substituir o arquivo google-services.json que o Firebase gerou.
+E substituir o arquivo google-services.json que está na raiz do projeto pelo arquivo que o Firebase gerou.
+(Porque se deixar o arquivo que está atualmente, ele vai tentar se comunicar com o meu projeto do Firebase e não com o seu).
 
 #### 12º - Pronto, pode executar o aplicativo que conforme a leitura do sensor vai aparecer a lampada acesa ou apagada
-Caso a lampada não mude, apenas olhe o valor que o sensor está informando e mude no "if" da classe MainActivity
-
+Caso a imagem da lampada não mude, apenas olhe o valor que o sensor está informando e mude no "if" da classe MainActivity.
+Porque conforme o sensor utilizado ele dá uma pequena variação nos valores, aí você olha no firebase qual o valor que ele fica quando apaga ou acende a luz e coloca nesse if.
 
 
