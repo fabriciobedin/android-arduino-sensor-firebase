@@ -1,4 +1,4 @@
-altere o script conforme instruções dentro do próprio script com seus dados do firebase.
+altere o script conforme instruÃ§Ãµes dentro do prÃ³prio script com seus dados do firebase.
 
 instalar o nodejs
 
@@ -15,3 +15,5 @@ firebase init
 npm install johnny-five
 
 node nomedoscript.js
+
+pode ignorar o restante dos scripts que tem nessa pasta, estava apenas fazendo testes com outros sensores.
